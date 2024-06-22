@@ -64,6 +64,10 @@ html {
     color: var(--white);
 }
 
+p {
+    margin: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -110,7 +114,7 @@ body {
 .nums .num {
     color: var(--keypadBack);
     background-color: var(--lightOrange);
-    padding: 10px 40px;
+    padding: 14px 40px 10px 40px;
     border-radius: 9px;
     text-align: center;
 }
