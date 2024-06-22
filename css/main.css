@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root {
+    /*Theme 1*/
+    --mainBack: hsl(222, 26%, 31%);
+    --keypadBack: hsl(223, 31%, 20%);
+    --screenBack: hsl(224, 36%, 15%);
+
+    --keyBack: hsl(225, 21%, 49%);
+    --keyShadow: hsl(224, 28%, 35%);
+
+    --red: hsl(6, 63%, 50%);
+    --darkRed: hsl(6, 70%, 34%);
+
+    --lightOrange: hsl(30, 25%, 89%);
+    --greyOrange: hsl(28, 16%, 65%);
+
+    --verydark: hsl(221, 14%, 31%);
+    --white: hsl(0, 0%, 100%);
+
+    /*Theme 2*/
+    --lightGrey: hsl(0, 0%, 90%);
+    --greyRed: hsl(0, 5%, 81%);
+    --veryLightGrey: hsl(0, 0%, 93%);
+
+    --darkCyan: hsl(25, 98%, 40%);
+    --darkOrange: hsl(25, 99%, 27%);
+
+    --lightYellow: hsl(45, 7%, 89%);
+    --darkGreyOrange: hsl(35, 11%, 61%);
+
+    --veryDarkYellow: hsl(60, 10%, 19%);
+
+    /*Theme 3*/
+    --veryDarkViolet: hsl(268, 75%, 9%);
+    --darkVioletBack: hsl(268, 71%, 12%);
+
+    --violetKeyboard: hsl(281, 89%, 26%);
+    --mangeta: hsl(285, 91%, 52%);
+
+    --pureCyan: hsl(176, 100%, 44%);
+    --softCyan: hsl(177, 92%, 70%);
+
+    --keyboardViolet: hsl(268, 47%, 21%);
+    --darkMangeta: hsl(290, 70%, 36%);
+
+    /*Text*/
+    --ligthtYellow: hsl(52, 100%, 62%);
+    --veryDarkBlue: hsl(198, 20%, 13%);
+
+    /*Font*/
+    --fontSize: 32px;
+    --fontWeight: 700;
+}
+
+html {
+    font-family: "League Spartan", sans-serif;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight);
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainBack);
+    position: relative;
+    color: var(--white);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 730px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.input-area {
+    width: inherit;
+    background-color: var(--screenBack);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 9px;
+}
+
+.keyboard {
+    width: inherit;
+    border-radius: 9px;
+    background-color: var(--keypadBack);
+}
+
+.keyboard .nums {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: stretch;
+    gap: 20px;
+    padding: 20px;
+}
+
+.nums .num {
+    color: var(--keypadBack);
+    background-color: var(--lightOrange);
+    padding: 10px 40px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.reset, .equal {
+    grid-column: span 2;
+}
