@@ -74,7 +74,7 @@ body {
 }
 
 .container {
-    width: 730px;
+    width: 505px;
     height: auto;
     position: absolute;
     top: 50%;
@@ -89,12 +89,30 @@ body {
 }
 
 .input-area {
-    width: inherit;
-    background-color: var(--screenBack);
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    margin: 15px 0;
     border-radius: 9px;
+    background-color: var(--screenBack);
+    width: inherit;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.input {
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    caret-color: transparent;
+    color: var(--white);
+    font-size: 53px;
+    font-weight: var(--fontWeight);
+    padding: 35px 25px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.input:focus {
+    outline: none;
 }
 
 .keyboard {
@@ -107,16 +125,46 @@ body {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-items: stretch;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 25px;
+}
+
+.del, .reset {
+    background-color: var(--keyBack) !important;
+    color: var(--white) !important;
+    transition-duration: 200ms;
+    box-shadow: 0 5px var(--keyShadow) !important;
+}
+
+.del:hover, .reset:hover {
+    background-color: hsl(227, 31%, 71%) !important;
+}
+
+.equal {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    transition-duration: 200ms;
+    box-shadow: 0 5px var(--darkRed) !important;
+}
+
+.equal:hover {
+    background-color: hsl(6, 67%, 62%) !important;
 }
 
 .nums .num {
     color: var(--keypadBack);
     background-color: var(--lightOrange);
-    padding: 14px 40px 10px 40px;
+    padding: 14px 34px 10px 34px;
     border-radius: 9px;
     text-align: center;
+    box-shadow: 0 5px var(--greyOrange);
+    cursor: pointer;
+    transition-duration: 200ms;
+    user-select: none;
+}
+
+.num:hover {
+    background-color: var(--white);
 }
 
 .reset, .equal {
