@@ -1,0 +1,52 @@
+/* -----switcher------- */
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 22px;
+    background-color: var(--keypadBack);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.toggle-button {
+    width: 15px; /* Circle diameter */
+    height: 15px;
+    background-color: var(--red);
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.state-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.state-label {
+    width: 23px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:nth-of-type(1):checked ~ .toggle-button {
+    left: 4px;
+}
+
+input[type="radio"]:nth-of-type(2):checked ~ .toggle-button {
+    left: 23px;
+}
+
+input[type="radio"]:nth-of-type(3):checked ~ .toggle-button {
+    left: 42px;
+}

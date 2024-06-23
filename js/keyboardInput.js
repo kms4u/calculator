@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const inputField = document.getElementById('inputField');
-    const buttons = document.querySelectorAll('#nums .num');
+    const buttons = document.querySelectorAll('#nums .keyNum');
     const operators = ['+', '-', 'x', '/', '.'];
 
     buttons.forEach(button => {

@@ -1,0 +1,62 @@
+/* Theme 2 */
+body.theme2 {
+    background-color: var(--lightGrey);
+    color: var(--veryDarkYellow);
+}
+
+body.theme2 .input {
+    color: var(--veryDarkYellow);
+}
+
+body.theme2 .input-area {
+    background-color: var(--white);
+}
+
+body.theme2 .keyboard {
+    background-color: var(--greyRed);
+}
+
+body.theme2 .del {
+    background-color: #388187;
+}
+
+body.theme2 .reset {
+    background-color: #388187;
+}
+
+body.theme2 .del {
+    box-shadow: 0 5px #2d5c64;
+}
+
+body.theme2 .reset {
+    box-shadow: 0 5px #2d5c64;
+}
+
+body.theme2 .del:hover {
+    background-color: #62b4bf;
+}
+
+body.theme2 .reset:hover {
+    background-color: #62b4bf;
+}
+
+body.theme2 .equal {
+    background-color: #c85401;
+}
+
+body.theme2 .equal {
+    box-shadow: 0 5px #873b01;
+}
+
+body.theme2 .equal:hover {
+    background-color: #ff8b38;
+    
+}
+
+body.theme2 .toggle-container {
+    background-color: var(--greyRed);
+}
+
+body.theme2 .toggle-button {
+    background-color: #c85401;
+}

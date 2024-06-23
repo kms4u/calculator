@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/switcher.css">
+  <link rel="stylesheet" href="./css/theme2.css">
+  <link rel="stylesheet" href="./css/theme3.css">
   
   <title>Calculator app</title>
 
@@ -15,33 +18,54 @@
     <div class="title">
       <p>calc</p>
       <div class="theme-wrap">
-        <p>theme</p>
-        <div class="toggle"></div>
+        <p style="font-size: 12px; margin-right: 15px; margin-bottom: 4px;">THEME</p>
+        <div class="toggle">
+          
+          <div class="toggle-container">
+            <div class="state-labels">
+                <label class="state-label" for="state1" style="color: transparent;">1</label>
+                <label class="state-label" for="state2" style="color: transparent;">2</label>
+                <label class="state-label" for="state3" style="color: transparent;">3</label>
+            </div>
+            <input type="radio" name="toggle" id="state1" checked>
+            <input type="radio" name="toggle" id="state2">
+            <input type="radio" name="toggle" id="state3">
+            <div class="toggle-button"></div>
+        </div>
+
+          <div class="themes" style="font-size: 15px;">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="input-area"><input type="text" class="input" id="inputField"></div>
     <div class="keyboard">
       <div class="nums" id="nums">
-        <div class="num">7</div>
-        <div class="num">8</div>
-        <div class="num">9</div>
-        <div class="num del" id="del">DEL</div>
-        <div class="num">4</div>
-        <div class="num">5</div>
-        <div class="num">6</div>
-        <div class="num">+</div>
-        <div class="num">1</div>
-        <div class="num">2</div>
-        <div class="num">3</div>
-        <div class="num">-</div>
-        <div class="num">.</div>
-        <div class="num">0</div>
-        <div class="num">/</div>
-        <div class="num">x</div>
-        <div class="num reset" id="reset">RESET</div>
-        <div class="num equal" id="equal">=</div>
+        <div class="num keyNum">7</div>
+        <div class="num keyNum">8</div>
+        <div class="num keyNum">9</div>
+        <div class="del keyNum" id="del">DEL</div>
+        <div class="num keyNum">4</div>
+        <div class="num keyNum">5</div>
+        <div class="num keyNum">6</div>
+        <div class="num keyNum">+</div>
+        <div class="num keyNum">1</div>
+        <div class="num keyNum">2</div>
+        <div class="num keyNum">3</div>
+        <div class="num keyNum">-</div>
+        <div class="num keyNum">.</div>
+        <div class="num keyNum">0</div>
+        <div class="num keyNum">/</div>
+        <div class="num keyNum">x</div>
+        <div class="reset keyNum" id="reset">RESET</div>
+        <div class="equal keyNum" id="equal">=</div>
     </div>
   </div>
 </body>
 <script src="./js/keyboardInput.js"></script>
+<script src="./js/keyPress.js"></script>
+<script src="./js/themeSwitch.js"></script>
 </html>

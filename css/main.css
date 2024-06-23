@@ -26,7 +26,6 @@
     --darkCyan: hsl(25, 98%, 40%);
     --darkOrange: hsl(25, 99%, 27%);
 
-    --lightYellow: hsl(45, 7%, 89%);
     --darkGreyOrange: hsl(35, 11%, 61%);
 
     --veryDarkYellow: hsl(60, 10%, 19%);
@@ -59,7 +58,6 @@ html {
     font-weight: var(--fontWeight);
     width: 100%;
     height: 100%;
-    background-color: var(--mainBack);
     position: relative;
     color: var(--white);
 }
@@ -70,6 +68,7 @@ p {
 
 body {
     display: flex;
+    background-color: var(--mainBack);
     justify-content: center;
 }
 
@@ -130,25 +129,25 @@ body {
 }
 
 .del, .reset {
-    background-color: var(--keyBack) !important;
-    color: var(--white) !important;
+    background-color: var(--keyBack);
+    color: var(--white);
     transition-duration: 200ms;
-    box-shadow: 0 5px var(--keyShadow) !important;
+    box-shadow: 0 5px var(--keyShadow);
 }
 
 .del:hover, .reset:hover {
-    background-color: hsl(227, 31%, 71%) !important;
+    background-color: hsl(227, 31%, 71%);
 }
 
 .equal {
-    background-color: var(--red) !important;
-    color: var(--white) !important;
+    background-color: var(--red);
+    color: var(--white);
     transition-duration: 200ms;
-    box-shadow: 0 5px var(--darkRed) !important;
+    box-shadow: 0 5px var(--darkRed);
 }
 
 .equal:hover {
-    background-color: hsl(6, 67%, 62%) !important;
+    background-color: hsl(6, 67%, 62%);
 }
 
 .nums .num {
@@ -169,4 +168,37 @@ body {
 
 .reset, .equal {
     grid-column: span 2;
+}
+
+.del, .reset, .equal {
+    padding: 14px 34px 10px 34px;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 200ms;
+    user-select: none;
+}
+
+.clicked {
+    transform: translateY(5px);
+}
+
+.toggle {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.theme-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+    width: 45px;
+    justify-content: space-between;
+    margin-bottom: 4px;
 }
