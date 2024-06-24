@@ -27,5 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function setTheme(theme) {
         document.body.classList.remove('theme1', 'theme2', 'theme3');
         document.body.classList.add(theme);
+
+        switch (theme) {
+            case 'theme1':
+                document.getElementById('state1').checked = true;
+                break;
+            case 'theme2':
+                document.getElementById('state2').checked = true;
+                break;
+            case 'theme3':
+                document.getElementById('state3').checked = true;
+                break;
+        }
     }
 });

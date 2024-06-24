@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const nums = this.querySelectorAll('.num');
+    const nums = this.querySelectorAll('.keyNum');
 
     nums.forEach(num => {
         num.addEventListener('click', function () {
