@@ -32,14 +32,6 @@ body.theme2 .reset {
     box-shadow: 0 5px #2d5c64;
 }
 
-body.theme2 .del:hover {
-    background-color: #62b4bf;
-}
-
-body.theme2 .reset:hover {
-    background-color: #62b4bf;
-}
-
 body.theme2 .equal {
     background-color: #c85401;
 }
@@ -48,15 +40,23 @@ body.theme2 .equal {
     box-shadow: 0 5px #873b01;
 }
 
-body.theme2 .equal:hover {
-    background-color: #ff8b38;
-    
-}
-
 body.theme2 .toggle-container {
     background-color: var(--greyRed);
 }
 
 body.theme2 .toggle-button {
     background-color: #c85401;
+}
+
+@media (hover: hover) {
+    body.theme2 .del:hover {
+        background-color: #62b4bf;
+    }
+    
+    body.theme2 .reset:hover {
+        background-color: #62b4bf;
+    }
+    body.theme2 .equal:hover {
+        background-color: #ff8b38;
+    }    
 }

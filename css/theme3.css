@@ -25,10 +25,6 @@ body.theme3 .nums .num {
     box-shadow: 0 5px var(--darkMangeta);
 }
 
-body.theme3 .num:hover {
-    background-color: #6b34ac;
-}
-
 body.theme3 .del {
     background-color: var(--violetKeyboard);
 }
@@ -43,14 +39,6 @@ body.theme3 .del {
 
 body.theme3 .reset {
     box-shadow: 0 5px var(--mangeta);
-}
-
-body.theme3 .del:hover {
-    background-color: #8631b0;
-}
-
-body.theme3 .reset:hover {
-    background-color: #8631b0;
 }
 
 body.theme3 .equal {
@@ -62,15 +50,26 @@ body.theme3 .equal {
     box-shadow: 0 5px var(--softCyan);
 }
 
-body.theme3 .equal:hover {
-    background-color: #94fff9;
-    
-}
-
 body.theme3 .toggle-container {
     background-color: var(--darkVioletBack);
 }
 
 body.theme3 .toggle-button {
     background-color: var(--pureCyan);
+}
+
+@media (hover: hover) {
+    body.theme3 .del:hover {
+        background-color: #8631b0;
+    }
+    
+    body.theme3 .reset:hover {
+        background-color: #8631b0;
+    }
+    body.theme3 .num:hover {
+        background-color: #6b34ac;
+    }
+    body.theme3 .equal:hover {
+        background-color: #94fff9;  
+    }
 }
