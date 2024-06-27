@@ -194,6 +194,12 @@ body {
     margin-bottom: 4px;
 }
 
+.hidden-span {
+    visibility: hidden;
+    white-space: nowrap;
+    position: absolute;
+}
+
 @media (max-width: 767px) {
     body {
         width: 100%;
