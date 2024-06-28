@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop Default Theme](./design/desktop1.png)
+[Desktop Default Theme]
+(./design/desktop1.png)
 [Desktop Second Theme](./design/desktop2.png)
 [Desktop Third Theme](./design/desktop3.png)
 [Mobile Second Theme](./design/mobile.png)
